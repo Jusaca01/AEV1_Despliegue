@@ -79,3 +79,10 @@ input[type="text"] {
     text-indent: 12px;
     transition: all 0.3s ease;
 }
+
+input[type="text"]:focus {
+    border-color: #7e3ba9;
+    background-color: #fff;
+    outline: none;
+
+}
