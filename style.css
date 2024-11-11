@@ -43,3 +43,7 @@ p,
 form {
     text-align: center;
 }
+
+form {
+    padding: 20px;
+}
