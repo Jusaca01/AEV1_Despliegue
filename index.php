@@ -60,17 +60,19 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
 </head>
 
 <body>
-    <h1>Juego del Ahorcado</h1>
-    <main>
-        <p>Palabra secreta: <?php echo $_SESSION['letras_acertadas']; ?></p>
-        <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
-        <form method="post">
-            <label for="letra">Introduce una letra:</label>
-            <input type="text" name="letra" id="letra" maxlength="1" required>
-            <button type="submit">Adivinar</button>
-        </form>
-        <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
-    </main>
+    <div id="background">
+        <h1>Juego del Ahorcado</h1>
+        <main>
+            <p>Palabra secreta: <?php echo $_SESSION['letras_acertadas']; ?></p>
+            <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
+            <form method="post">
+                <label for="letra">Introduce una letra:</label>
+                <input type="text" name="letra" id="letra" maxlength="1" required>
+                <button type="submit">Adivinar</button>
+            </form>
+            <p>Letras usadas: <?php echo implode(', ', $_SESSION['letras_usadas']); ?></p>
+        </main>
+    </div>
 </body>
 
 </html>
